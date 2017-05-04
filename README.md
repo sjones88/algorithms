@@ -1,0 +1,2 @@
+# Algorithms!
+I'm conducting a job search, so naturally, I spend a significant portion of most days working on algorithms and data structures. Rather than letting these practice implementations build up on my local machine, I'm going to start putting things in this repo.
