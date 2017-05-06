@@ -4,7 +4,7 @@ function BinaryTreeNode(data) {
 	this.right = null;
 	this.traverse = function(callback, node) {
 		if (node) { // node != null
-			// in-order traversal
+			// in-order
 			this.traverse(node.left, callback);
 			callback(node);
 			this.traverse(node.right, callback);
