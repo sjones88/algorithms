@@ -9,7 +9,9 @@ class Node
 	def self.traverse(node, &block)
 		if node != nil
 			self.traverse(node.left, &block)
-			block.call(node)
+			if block_given?
+				block.call(node)
+			end
 			self.traverse(node.right, &block)
 		end
 	end
