@@ -4,6 +4,7 @@
 
 def make_change(n)
 	def change(amount, denoms, index)
+		return 0 if amount == 0
 		return 1 if index >= denoms.length
 		current_denom = denoms[index]
 		ways = 0
@@ -19,4 +20,8 @@ def make_change(n)
 	change(n, denoms, 0)
 end
 
-puts make_change(6)
+i = 0
+while i < 10
+	puts "#{i}: #{make_change(i)}"
+	i += 1
+end
